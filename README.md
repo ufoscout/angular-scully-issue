@@ -4,12 +4,16 @@ Reproducer for [Scully issue 1298](https://github.com/scullyio/scully/issues/129
 
 ## Steps to reproduce the issue:
 - Enter the `server` directory and start the backend:
+  
   `npm start`
+  
   This starts an express http server at port 3000. It has a single REST enpoint at `/api/users`
 - In another terminal, while the backend is up and running, enter the `angular-scully` directory and:
     - build the angular application:
+
       `npm run build`
     - when the build is finished, launch the scully build:
+    
       `npm run scully`
 
 ## Expected behavior:
